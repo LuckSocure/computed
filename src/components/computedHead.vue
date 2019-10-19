@@ -2,16 +2,17 @@
     <div class="computed-head">
         <img src="../assets/img/logo.jpg" alt="LOGO" title="LOGO">
         <span>计算机与信息工程系</span>
-        <el-tabs class="menu" v-model="activeName" @tab-click="handleClick">
-            <el-tab-pane label="学院概况" name="first">学院概况</el-tab-pane>
-            <el-tab-pane label="师资队伍" name="second">师资队伍</el-tab-pane>
-            <el-tab-pane label="人才培养" name="third">人才培养</el-tab-pane>
-            <el-tab-pane label="科学研究" name="fourth">科学研究</el-tab-pane>
-            <el-tab-pane label="学生工作" name="fives">学生工作</el-tab-pane>
-            <el-tab-pane label="党建思政" name="six">党建思政</el-tab-pane>
-            <el-tab-pane label="对外交流" name="seven">对外交流</el-tab-pane>
-            <el-tab-pane label="校友中心" name="eight">校友中心</el-tab-pane>
-        </el-tabs>
+        <ul class="menu">
+            <router-link tag="li" to="/home">首页</router-link>
+            <router-link tag="li" to="/Introduction">学院概况</router-link>
+            <router-link tag="li" to="/teacher">师资队伍</router-link>
+            <router-link tag="li" to="/talent">人才培养</router-link>
+            <router-link tag="li" to="/study">科学研究</router-link>
+            <router-link tag="li" to="/student">学生工作</router-link>
+            <router-link tag="li" to="/thought">党建思政</router-link>
+            <router-link tag="li" to="/with">对外交流</router-link>
+            <router-link tag="li" to="/alumni">校友中心</router-link>
+        </ul>
     </div>
 </template>
 
@@ -52,5 +53,15 @@ export default {
         top: 20px;
         display: inline-block;
         margin-left: 20px;
+    }
+    .menu > li{
+        list-style: none;
+        display: inline-block;
+        margin-right: 10px;
+        font-size: 14px;
+        color: #595757;
+    }
+    .menu >li:hover{
+        color: aquamarine;
     }
 </style>
