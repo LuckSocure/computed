@@ -60,6 +60,7 @@ export default {
         margin-right: 10px;
         font-size: 14px;
         color: #595757;
+        cursor: pointer;
     }
     .menu >li:hover{
         color: aquamarine;
