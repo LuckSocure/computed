@@ -10,7 +10,7 @@
             <router-link tag="li" to="/study">科学研究</router-link>
             <router-link tag="li" to="/student">学生工作</router-link>
             <router-link tag="li" to="/thought">党建思政</router-link>
-            <router-link tag="li" to="/with">对外交流</router-link>
+            <router-link tag="li" to="/with">实训基地</router-link>
             <router-link tag="li" to="/alumni">校友中心</router-link>
         </ul>
     </div>

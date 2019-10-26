@@ -87,9 +87,10 @@ export default {
         display: inline-block;
         width: 100%;
     }
-    .text{
+    .text p{
         font-size: 16px;
         color: #0b0b0b;
         text-indent: 2em;
+        line-height: 30px;
     }
 </style>

@@ -44,7 +44,40 @@ export default new Router({
     {
       path: '/with',
       name: 'with',
-      component: () => import('../components/with')
+      redirect: '/with/movie',
+      component: () => import('../components/with/with'),
+      children: [
+        {
+          path: 'movie',
+          name: 'movie',
+          component: () => import('@/components/with/movie')
+        },
+        {
+          path: 'basics',
+          name: 'basics',
+          component: () => import('@/components/with/basics')
+        },
+        {
+          path: 'network',
+          name: 'network',
+          component: () => import('@/components/with/network')
+        },
+        {
+          path: 'soft',
+          name: 'soft',
+          component: () => import('@/components/with/soft')
+        },
+        {
+          path: 'website',
+          name: 'website',
+          component: () => import('@/components/with/website')
+        },
+        {
+          path: 'things',
+          name: 'things',
+          component: () => import('@/components/with/things')
+        },
+      ]
     },
     {
       path: '/alumni',
