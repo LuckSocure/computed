@@ -5,8 +5,7 @@ import home from '@/components/home'
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
+  routes: [{
       path: '/home',
       name: 'home',
       component: home
@@ -29,7 +28,66 @@ export default new Router({
     {
       path: '/study',
       name: 'study',
-      component: () => import('../components/study')
+      component: () => import('../components/study/study')
+    },
+    {
+      path: '/study/learning',
+      name: 'learning',
+      redirect: '/study/learning/inner',
+      component: () => import('@/components/study/learning'),
+      children: [
+        {
+          path: 'inner',
+          name: 'inner',
+          component: () => import('@/components/study/learn/inner')
+        },
+        {
+          path: 'idea',
+          name: 'idea',
+          component: () => import('@/components/study/learn/idea')
+        }
+      ]
+    },
+    {
+      path: '/study/education',
+      name: 'education',
+      redirect: '/study/education/ment',
+      component: () => import('@/components/study/education'),
+      children: [
+        {
+          path: 'mechanism',
+          name: 'mechanism',
+          component: () => import('@/components/study/edu/mechanism')
+        },
+        {
+          path: 'ment',
+          name: 'ment',
+          component: () => import('@/components/study/edu/ment')
+        },
+        {
+          path: 'sumup',
+          name: 'sumup',
+          component: () => import('@/components/study/edu/sumup')
+        }
+      ]
+    },
+    {
+      path: '/study/yuchuang',
+      name: 'yuchuang',
+      redirect: '/study/yuchuang/training',
+      component: () => import('@/components/study/yuchuang'),
+      children: [
+        {
+          path: 'training',
+          name: 'training',
+          component: () => import('@/components/study/yuch/training')
+        },
+        {
+          path: 'pioneer',
+          name: 'pioneer',
+          component: () => import('@/components/study/yuch/pioneer')
+        },
+      ]
     },
     {
       path: '/student',
@@ -46,8 +104,7 @@ export default new Router({
       name: 'with',
       redirect: '/with/movie',
       component: () => import('../components/with/with'),
-      children: [
-        {
+      children: [{
           path: 'movie',
           name: 'movie',
           component: () => import('@/components/with/movie')
@@ -86,10 +143,10 @@ export default new Router({
     },
     {
       path: '*',
-      redirect (to) {
+      redirect(to) {
         if (to.path === '/') {
           return '/home'
-        }else{
+        } else {
           return '/Error'
         }
       }

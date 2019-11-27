@@ -9,3 +9,10 @@ export default {
     
 }
 </script>
+
+<style scoped>
+.student{
+    width: 1170px;
+    margin: 0 auto;
+}
+</style>

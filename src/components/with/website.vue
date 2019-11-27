@@ -2,6 +2,12 @@
     <div class="website">
         <p class="title">计算机基础技术中心</p>
         <p v-for="(text,index) in textList" :key="index">{{text}}</p>
+        <ul>
+            <li v-for="(item, index) in imgList" :key="index">
+                <img :src="item.src" alt="">
+                <p>{{item.text}}</p>
+            </li>
+        </ul>
     </div>
 </template>
 
@@ -9,6 +15,11 @@
 export default {
     data () {
         return {
+            imgList: [
+                {src: require('@/assets/img/jc_01.jpg'), text: '机房内景一'},
+                {src: require('@/assets/img/jc_02.jpg'), text: '机房内景二'},
+                {src: require('@/assets/img/jc_03.jpg'), text: '教师指导学生实训项目'}
+            ],
             textList: [
                 '计算机基础技术中心前身是计算机基础技术实验室，经过多年的发展，现在已成为全校公共计算机基础课实验教学、学生竞赛、实验实训、培训和其他科技创新实践活动的实践锻炼基地，同时为教师提供科研、教研、教改的实验平台。',
                 '该中心承担全校计算机基础实验教学和部分学院的专业课实验教学，日平均接纳学生上千人次，设有计算机组装、多媒体技术、平面设计、程序设计等多个现代化实训室。',
@@ -35,5 +46,20 @@ export default {
     text-align: center;
     font-size: 24px;
     font-weight: 800;
+}
+ul{
+    padding-left: 0;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 10px;
+}
+ul li p{
+    line-height: 20px;
+    font-size: 14px;
+    color: #7b7b7b;
+    text-align: center;
 }
 </style>

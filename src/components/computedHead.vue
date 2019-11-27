@@ -5,13 +5,13 @@
         <ul class="menu">
             <router-link tag="li" to="/home">首页</router-link>
             <router-link tag="li" to="/Introduction">学院概况</router-link>
+            <router-link tag="li" to="/talent">系部简介</router-link>
             <router-link tag="li" to="/teacher">师资队伍</router-link>
-            <router-link tag="li" to="/talent">人才培养</router-link>
-            <router-link tag="li" to="/study">科学研究</router-link>
-            <router-link tag="li" to="/student">学生工作</router-link>
+            <router-link tag="li" to="/study">创新创业</router-link>
             <router-link tag="li" to="/thought">党建思政</router-link>
             <router-link tag="li" to="/with">实训基地</router-link>
-            <router-link tag="li" to="/alumni">校友中心</router-link>
+            <router-link tag="li" to="/alumni">专业建设</router-link>
+            <router-link tag="li" to="/student">学生园地</router-link>
         </ul>
     </div>
 </template>

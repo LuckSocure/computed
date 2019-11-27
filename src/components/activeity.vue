@@ -22,7 +22,7 @@ export default {
             default: '学生活动'
         },
         activeArr: {
-            type: Object
+            type: Array
         }
     }
 }
