@@ -139,7 +139,7 @@ export default new Router({
     {
       path: '/alumni',
       name: 'alumni',
-      component: () => import('../components/alumni')
+      component: () => import('../components/alumni/alumni')
     },
     {
       path: '*',
