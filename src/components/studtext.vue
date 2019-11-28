@@ -1,7 +1,7 @@
 <template>
   <div class="text">
     <p>{{title}}</p>
-    <img v-for="(src,index) in imgSrc" :key="index" :src="src" alt />
+    <img v-for="src in imgSrc" :key="src" :src="src" alt />
   </div>
 </template>
 

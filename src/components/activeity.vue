@@ -6,10 +6,10 @@
             <a href="/">更多</a>
         </div>
         <ul class="menu">
-            <li v-for="(item, index) in activeArr" :key="index">
-                <a href="/">{{item.tag}}</a>
+            <router-link tag="li" v-for="(item, index) in activeArr" :key="index" :to="item.to">
+                <a href="#">{{item.tag}}</a>
                 <span>{{item.time}}</span>
-            </li>
+            </router-link>
         </ul>
     </div>
 </template>

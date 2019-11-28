@@ -1,22 +1,22 @@
 <template>
     <ul class="alumni-list">
-        <router-link tag="li" to="/alumni/movie">
+        <router-link tag="li" to="/alumni/apply">
             <span>计算机应用技术专业简介</span>
             <span>[2019-10-10]</span>
         </router-link>
-        <router-link tag="li" to="/alumni/basics">
+        <router-link tag="li" to="/alumni/internet">
             <span>物联网应用技术专业简介</span>
             <span>[2019-10-10]</span>
         </router-link>
-        <router-link tag="li" to="/alumni/network">
-            <span>计算机信息管理专业（网站设计与维护方向）简介</span>
+        <router-link tag="li" to="/alumni/manage">
+            <span>计算机信息管理专业简介</span>
             <span>[2019-10-10]</span>
         </router-link>
-        <router-link tag="li" to="/alumni/soft">
+        <router-link tag="li" to="/alumni/skill">
             <span>软件技术专业简介</span>
             <span>[2019-10-10]</span>
         </router-link>
-        <router-link tag="li" to="/alumni/website">
+        <router-link tag="li" to="/alumni/present">
             <span>计算机网络技术专业简介</span>
             <span>[2019-10-10]</span>
         </router-link>

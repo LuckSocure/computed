@@ -139,7 +139,35 @@ export default new Router({
     {
       path: '/alumni',
       name: 'alumni',
-      component: () => import('../components/alumni/alumni')
+      redirect: '/alumni/apply',
+      component: () => import('../components/alumni/alumni'),
+      children: [
+        {
+          path: 'apply',
+          name: 'apply',
+          component: () => import('@/components/alumni/apply')
+        },
+        {
+          path: 'internet',
+          name: 'internet',
+          component: () => import('@/components/alumni/internet')
+        },
+        {
+          path: 'manage',
+          name: 'manage',
+          component: () => import('@/components/alumni/manage')
+        },
+        {
+          path: 'skill',
+          name: 'skill',
+          component: () => import('@/components/alumni/skill')
+        },
+        {
+          path: 'present',
+          name: 'present',
+          component: () => import('@/components/alumni/present')
+        }
+      ]
     },
     {
       path: '*',

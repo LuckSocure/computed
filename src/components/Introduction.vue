@@ -21,15 +21,15 @@ export default {
     data() {
         return {
             contList: [
-                {text: '学院简介', link: ''},
-                {text: '历史沿革', link: ''},
-                {text: '学院荣誉', link: ''},
-                {text: '校园风景', link: ''},
-                {text: '校徽校训', link: ''},
-                {text: '校风学风', link: ''},
-                {text: '媒体机电', link: ''},
-                {text: '学院地图', link: ''},
-                {text: '技术中心', link: ''}
+                {text: '学院简介', link: '#'},
+                {text: '历史沿革', link: '#'},
+                {text: '学院荣誉', link: '#'},
+                {text: '校园风景', link: '#'},
+                {text: '校徽校训', link: '#'},
+                {text: '校风学风', link: '#'},
+                {text: '媒体机电', link: '#'},
+                {text: '学院地图', link: '#'},
+                {text: '技术中心', link: '#'}
 
             ],
             imgSrc: '../assets/img/2.jpg',
